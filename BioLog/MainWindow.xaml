@@ -1,0 +1,30 @@
+﻿<Window x:Class="BioLog.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:BioLog"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="654" Width="831.426" Loaded="Window_Loaded">
+    <Grid>
+        <ListBox x:Name="deviceList" HorizontalAlignment="Left" Height="353" Margin="10,10,0,0" VerticalAlignment="Top" Width="293"/>
+        <Button x:Name="button" Content="Load" HorizontalAlignment="Left" Margin="137,368,0,0" VerticalAlignment="Top" Width="75" Click="button_Click"/>
+        <Button x:Name="button1" Content="get" HorizontalAlignment="Left" Margin="217,368,0,0" VerticalAlignment="Top" Width="75" Click="button1_Click_1"/>
+        <TextBlock x:Name="deviceInfo" HorizontalAlignment="Left" Margin="320,35,0,0" TextWrapping="Wrap" Text="  " VerticalAlignment="Top"/>
+        <TextBox x:Name="deviceID" HorizontalAlignment="Left" Height="23" Margin="320,56,0,0" TextWrapping="Wrap" Text="deviceID" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="MAC" HorizontalAlignment="Left" Height="23" Margin="320,84,0,0" TextWrapping="Wrap" Text="MAC" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="FWVersion" HorizontalAlignment="Left" Height="23" Margin="320,112,0,0" TextWrapping="Wrap" Text="FWVersion" VerticalAlignment="Top" Width="120"/>
+        <CheckBox x:Name="DHCP" Content="DHCP" HorizontalAlignment="Left" Margin="320,172,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="useServer" Content="useServer" HorizontalAlignment="Left" Margin="416,172,0,0" VerticalAlignment="Top"/>
+        <CheckBox x:Name="synchTime" Content="synchTime" HorizontalAlignment="Left" Margin="521,172,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="ipAddr" HorizontalAlignment="Left" Height="23" Margin="320,206,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="gateway" HorizontalAlignment="Left" Height="23" Margin="320,234,0,0" TextWrapping="Wrap" Text="gateway" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="subnetMask" HorizontalAlignment="Left" Height="23" Margin="320,262,0,0" TextWrapping="Wrap" Text="subnetMask   " VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="serverIP" HorizontalAlignment="Left" Height="23" Margin="320,290,0,0" TextWrapping="Wrap" Text="serverIP" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="port" HorizontalAlignment="Left" Height="23" Margin="320,318,0,0" TextWrapping="Wrap" Text="port" VerticalAlignment="Top" Width="120"/>
+        <Button x:Name="button2" Content="write" HorizontalAlignment="Left" Margin="453,210,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button3" Content="Button" HorizontalAlignment="Left" Margin="453,238,0,0" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="button4" Content="Button" HorizontalAlignment="Left" Margin="453,270,0,0" VerticalAlignment="Top" Width="75"/>
+
+    </Grid>
+</Window>
